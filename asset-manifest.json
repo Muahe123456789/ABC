@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/Muahe123456789/ABC.git/static/css/main.556946eb.css",
-    "main.js": "/Muahe123456789/ABC.git/static/js/main.074a2733.js",
-    "static/js/453.b0629ae6.chunk.js": "/Muahe123456789/ABC.git/static/js/453.b0629ae6.chunk.js",
-    "static/media/remixicon.svg?t=1730118419915": "/Muahe123456789/ABC.git/static/media/remixicon.0551ce0fd52a1a7b1230.svg",
-    "static/media/remixicon.eot?t=1730118419915": "/Muahe123456789/ABC.git/static/media/remixicon.918a6e24637af868f0ae.eot",
-    "static/media/remixicon.ttf?t=1730118419915": "/Muahe123456789/ABC.git/static/media/remixicon.13d81601cf448c068ce1.ttf",
-    "static/media/remixicon.woff?t=1730118419915": "/Muahe123456789/ABC.git/static/media/remixicon.442ee771ea7ae5b713e4.woff",
-    "static/media/remixicon.woff2?t=1730118419915": "/Muahe123456789/ABC.git/static/media/remixicon.11bc908555df35c11b24.woff2",
-    "index.html": "/Muahe123456789/ABC.git/index.html",
-    "main.556946eb.css.map": "/Muahe123456789/ABC.git/static/css/main.556946eb.css.map",
-    "main.074a2733.js.map": "/Muahe123456789/ABC.git/static/js/main.074a2733.js.map",
-    "453.b0629ae6.chunk.js.map": "/Muahe123456789/ABC.git/static/js/453.b0629ae6.chunk.js.map"
+    "main.css": "/ABC/static/css/main.4f9fd84d.css",
+    "main.js": "/ABC/static/js/main.3d90e266.js",
+    "static/js/453.b0629ae6.chunk.js": "/ABC/static/js/453.b0629ae6.chunk.js",
+    "static/media/remixicon.svg?t=1730118419915": "/ABC/static/media/remixicon.0551ce0fd52a1a7b1230.svg",
+    "static/media/remixicon.eot?t=1730118419915": "/ABC/static/media/remixicon.918a6e24637af868f0ae.eot",
+    "static/media/remixicon.ttf?t=1730118419915": "/ABC/static/media/remixicon.13d81601cf448c068ce1.ttf",
+    "static/media/remixicon.woff?t=1730118419915": "/ABC/static/media/remixicon.442ee771ea7ae5b713e4.woff",
+    "static/media/remixicon.woff2?t=1730118419915": "/ABC/static/media/remixicon.11bc908555df35c11b24.woff2",
+    "index.html": "/ABC/index.html",
+    "main.4f9fd84d.css.map": "/ABC/static/css/main.4f9fd84d.css.map",
+    "main.3d90e266.js.map": "/ABC/static/js/main.3d90e266.js.map",
+    "453.b0629ae6.chunk.js.map": "/ABC/static/js/453.b0629ae6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.556946eb.css",
-    "static/js/main.074a2733.js"
+    "static/css/main.4f9fd84d.css",
+    "static/js/main.3d90e266.js"
   ]
 }
