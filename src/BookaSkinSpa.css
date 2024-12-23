@@ -1,0 +1,119 @@
+/* Container chính */
+.spa-card-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #fff;
+    font-family: "Arial", sans-serif;
+}
+
+/* Hình ảnh lớn */
+.spa-card-image img {
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Phần nội dung thông tin */
+.spa-card-content {
+    text-align: left;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.spa-card-title {
+    font-size: 30px;
+    text-align: left;
+    margin-bottom: 0;
+    color: #333;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.spa-card-subtitle {
+    font-size: 20px;
+    color: #777;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.spa-card-address {
+    font-size: 12px;
+    color: #555;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 20px;
+}
+
+.spa-card-phone {
+    font-size: 12px;
+    color: #555;
+    margin: 5px 0;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.spa-card-buttons {
+    margin-top: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    background-color: #FF1493;
+    color: #fff;
+    font-size: 0.9em;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background 0.3s ease;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.btn:hover {
+    background-color: #cb1275;
+}
+
+/* Responsive cho màn hình nhỏ hơn 768px (mobile) */
+@media screen and (max-width: 768px) {
+    .spa-card-container {
+        padding: 10px;
+    }
+
+    .spa-card-image img {
+        margin-top: 20px;
+        height: 200px; /* Điều chỉnh chiều cao cho mobile */
+    }
+
+    .spa-card-title {
+        font-size: 24px; /* Giảm kích thước font cho mobile */
+        text-align: center;
+    }
+
+    .spa-card-subtitle {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .spa-card-address,
+    .spa-card-phone {
+        font-size: 10px; /* Giảm kích thước font */
+        text-align: center;
+    }
+
+    .spa-card-content {
+        padding: 10px;
+    }
+
+    .spa-card-buttons {
+        text-align: center; /* Căn giữa các nút */
+    }
+
+    .btn {
+        padding: 8px 15px; /* Giảm padding của nút */
+        font-size: 0.8em;
+        margin: 5px 0; /* Khoảng cách giữa các nút */
+    }
+}

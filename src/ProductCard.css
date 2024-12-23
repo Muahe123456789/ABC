@@ -1,0 +1,53 @@
+.imgba6 {
+    border: 1px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    background-color: #fff;
+    margin: 15px;
+  }
+  
+  .product-label {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .product-name {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 10px 0;
+  }
+  
+  .product-size {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .card__preci {
+    display: block;
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .card__preci--before {
+    text-decoration: line-through;
+    color: #888;
+  }
+  
+  .card__preci--now {
+    font-weight: bold;
+    color: #e91e63;
+  }
+  
+  .btn {
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .btn:hover {
+    background-color: #d81b60;
+  }
+  

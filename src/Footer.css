@@ -1,0 +1,192 @@
+/* Chỉnh màu nền của footer */
+.footer {
+  background-color: rgb(255, 233, 233);
+  padding: 20px 0;
+  border-top: 2px solid #C71585;
+  border-radius: 1px;
+}
+
+/* Logo trong footer */
+.footer__logo img {
+  width: 250px; /* Điều chỉnh kích thước của logo */
+  height: auto;
+}
+
+/* Container của footer */
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap; /* Xuống hàng nếu không đủ không gian */
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Chỉnh cho phần sản phẩm */
+.footer__product-catalog {
+  margin-right: 170px;
+}
+
+/* Tiêu đề của các phần trong footer */
+.footer__title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #FF1493;
+}
+
+/* Liên kết trong footer */
+.footer__links,
+.footer__social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer__links li,
+.footer__social-links li {
+  margin-bottom: 10px;
+  color: #020202;
+}
+
+.footer__links a,
+.footer__social-links a {
+  text-decoration: none;
+  color: #000000;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__links a:hover,
+.footer__social-links a:hover {
+  color: #cb1275;
+}
+
+/* Form nhập email */
+.footer__email-form {
+  display: flex;
+  gap: 10px;
+}
+
+.footer__email-form input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.footer__email-form button {
+  padding: 10px 15px;
+  background-color: #FF1493;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer__email-form button:hover {
+  background-color: #cb1275;
+}
+
+/* Bar dưới footer */
+.footer__bar {
+  color: #0a0a0a;
+  text-align: center;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+  .footer__bar {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  /* Logo footer nhỏ lại cho mobile */
+  .footer__logo img {
+    width: 200px;
+  }
+
+  /* Chỉnh lại các cột trong footer */
+  .footer__container {
+    flex-direction: column; /* Đặt các phần tử theo chiều dọc */
+    align-items: center;
+  }
+
+  .footer__product-catalog,
+  .footer__social,
+  .footer__hours {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+
+  
+
+ 
+  .footer__links {
+    margin-bottom: 20px;
+  }
+
+  /* Chỉnh khoảng cách và chiều rộng của iframe */
+  .map-container iframe {
+    width: 100%;
+    height: 200px;
+  }
+
+  /* Chỉnh lại nút scroll to top */
+  .scroll-to-top-btn {
+    bottom: 10px;
+    right: 10px;
+    padding: 8px;
+    font-size: 16px;
+  }
+}
+
+/* Scroll to Top Button */
+.scroll-to-top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #FF1493;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  display: none;
+  transition: opacity 0.3s;
+}
+
+.scroll-to-top-btn:hover {
+  background-color: #cb1275;
+}
+
+/* Màu cho các icon */
+.i {
+  font-size: 24px;
+  color: #e1d3d3;
+}
+
+a:hover i {
+  color: #cb1275;
+}
+
+/* Bảo vệ bản đồ */
+.map-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 70px;
+}
+
+iframe {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+}

@@ -1,0 +1,22 @@
+.price-containerQ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.old-price {
+    font-size: 1em;
+    color: #777;
+    text-decoration: line-through;
+    font-weight: normal;
+}
+
+.new-price {
+    font-size: 1.2em;
+    color: rgb(255, 143, 63);
+    font-weight: bold;
+}
+
+  
+  

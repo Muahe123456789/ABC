@@ -1,0 +1,198 @@
+
+/* Header Content */
+.section__container {
+  display: flex;
+  justify-content: space-between; /* Distributes space between the two divs */
+  align-items: center; /* Vertically aligns the items in the center */
+}
+.image2 img {
+  max-width: 100%; /* Ensures the image is responsive */
+  height: auto;
+}
+
+.header__content {
+  flex: 1; 
+  width: 100%; 
+  padding-right: 20px;
+   
+}
+.whitd {
+  display: flex; /* Sử dụng Flexbox */
+  align-items: center; /* Canh giữa theo chiều dọc */
+  justify-content: space-between; /* Tạo khoảng cách giữa các phần tử */
+  width: 100%; /* Đảm bảo nó chiếm toàn bộ chiều rộng */
+  overflow: hidden; /* Ngăn tràn nội dung gây nhảy */
+  white-space: nowrap; /* Ngăn chữ xuống dòng */
+}
+
+.whitd h2 {
+  font-size: 45px;
+  color: #0d0d0d;
+  margin-right: 20px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.colorsp {
+  display: inline-block;
+  font-size: 45px;
+  color: #05edf1;
+  font-family: 'Times New Roman', Times, serif;
+  min-width: 100px; /* Đặt kích thước tối thiểu để tránh nhảy */
+  text-align: left; /* Căn lề văn bản */
+}
+
+/* Heading 2 styling for Skincare */
+
+
+.whitd .colorsp {
+  color: #05edf1;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  display: inline-block; 
+  margin-left: 0; 
+  position: relative;
+}
+
+.colorsp span {
+  font-size: 45px;
+  color: #F342AC;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+/* Heading 1 */
+.header__content h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin: 20px 0;
+  color: #000;
+  font-family:'Times New Roman', Times, serif;
+  
+}
+
+/* Smaller Heading 2 */
+.header__content h2 {
+  font-size: 40px;
+  font-weight: normal;
+  color: #0d0d0d;
+  margin-bottom: 15px;
+  font-family:'Times New Roman', Times, serif;
+  text-align: left;
+}
+
+/* Paragraphs with sale details */
+.header__content h5 {
+  font-size: 18px;
+  color: #0b0b0b;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+/* Emphasized text for discounts */
+.header__content b {
+  font-weight: bold;
+  color: #F342AC; /* Highlight discount color */
+  font-family:'Times New Roman', Times, serif;
+}
+
+.header__content h1 {
+  font-weight: bold;
+  color: #F342AC;
+  text-align: left; /* Căn h1 sang trái */
+}
+
+/* Call-to-action text */
+.header__content h4 {
+  font-size: 20px;
+  font-weight: bold;
+  color: #0b0b0b;
+  margin-bottom: 20px;
+  text-align: left; /* Căn h4 sang trái */
+}
+
+/* Button styling */
+.header__btn .btn {
+  background-color: #F342AC; /* Button color */
+  color: white;
+  border-radius: 15px;
+  border: none; /* Đảm bảo không có viền */
+  box-shadow: 0px 4px 6px rgba(10, 10, 10, 0.5); /* Bóng đậm hơn */
+  padding: 12px 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: inline-block; /* Đảm bảo nút không chiếm toàn bộ chiều rộng */
+  text-align: left; /* Căn nút về trái */
+}
+
+.header__btn .btn:hover {
+  background-color: #C71585; /* Darker on hover */
+}
+/* Header Image */
+/* Thêm hiệu ứng trượt từ phải sang trái */
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%); /* Bắt đầu từ bên ngoài */
+  }
+  100% {
+    transform: translateX(0); /* Vị trí cuối cùng */
+  }
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .section__container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .header__content {
+    max-width: 100%;
+    margin-bottom: 30px;
+    text-align: left;
+  }
+
+  .header__image {
+    max-width: 80%;
+    margin-top: 20px;
+  }
+}
+.section__container{
+  background-size:48%; /* Giảm kích thước còn 50% */
+  background-repeat: no-repeat; /* Không lặp lại ảnh */
+  background-position:right ; /* Đặt hình ảnh ở giữa */
+}
+/* ------------ */
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Hoặc 'center' nếu bạn muốn căn giữa */
+  align-items: center;
+  gap: 20px; /* Khoảng cách giữa các div con */
+}
+
+.header__content {
+  flex: 1; /* Đảm bảo phần tử này chiếm không gian còn lại */
+  padding: 20px;
+}
+
+.video-container {
+  position: relative;
+  width: 50%; /* Video chiếm toàn bộ chiều rộng của container */
+  aspect-ratio: 16 / 9; /* Giữ tỉ lệ 16:9 cho video */
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden; /* Tránh video bị tràn */
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0; /* Loại bỏ border mặc định của iframe */
+}
+
+
+.header__content h5{
+  letter-spacing: 1px; /* Tăng khoảng cách giữa các ký tự */
+  line-height: 1.6; /* Tăng khoảng cách giữa các dòng nếu cần */
+}

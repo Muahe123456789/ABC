@@ -1,0 +1,109 @@
+.about-us-section {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 60px;
+    margin-bottom: 40px;
+  }
+  .about-us-sectionB{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 40px;
+    background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+  .text-contentb{
+        flex: 1; 
+        max-width: 50%; 
+  }
+
+  .text-content {
+    flex: 1; 
+    max-width: 50%; 
+  }
+  
+  .text-content .headline {
+    font-size: 6rem;
+    color: #FF1493;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .text-content .subheadline {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .text-content p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .text-content .discover-more-link {
+    font-size: 1rem;
+    color: #FF1493; 
+    text-decoration: underline;
+  }
+  
+  .image-content {
+    display: flex;
+    justify-content: flex-start; 
+    width: 40%; 
+    
+  }
+  
+  
+  .product-image23 {
+    width: 100%;
+    height: 450px;
+    padding: 20px;
+    border: 1px solid #ccc; /* Viền nhạt */
+    border-radius: 15px; /* Bo góc hình */
+    animation: slideRight 1s ease-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Thêm hiệu ứng box-shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng bóng nhẹ */
+}
+
+.product-image23:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+  
+  .text-contentb p{
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .text-contentb .subheadline {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+ 
+  .text-contentb .headline {
+    font-size: 6rem;
+    color: #FF1493; 
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  .text-contentb{
+    margin-left: 50%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    animation: slideRight 1s ease-out;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Thêm hiệu ứng box-shadow */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng bóng nhẹ */
+  }
+  .text-contentb .discover-more-link{
+    color: #FF1493; 
+  }
+
+  

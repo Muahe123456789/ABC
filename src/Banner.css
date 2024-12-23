@@ -1,0 +1,87 @@
+/* Đặt container cho banner với chiều rộng 100% */
+.banner {
+  width: 100%;
+  display: flex;
+  align-items: center; /* Căn giữa theo chiều dọc */
+  justify-content: space-between; /* Căn giữa các phần tử bên trong */
+  padding: 20px; /* Giảm padding để làm cho div nhỏ lại */
+  height: 60vh; /* Giảm chiều cao từ 100vh xuống 60vh */
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(to right, #f0629d, #87afee, #bfc3ed); /* Gradient với màu pastel */
+}
+
+/* Phần chữ */
+.banner__content {
+  width: 70%;
+  flex: 1; /* Lấy toàn bộ không gian còn lại */
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(11, 11, 11);
+  margin-left: 120px; /* Điều chỉnh khoảng cách giữa văn bản và hình ảnh */
+}
+
+.banner__content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-right: 400px;
+}
+
+.banner__content p {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Phần hình ảnh */
+.banner__image img {
+  width: 100%;
+  height: 50vh;
+  border-radius: 25px;
+}
+
+.banner__image {
+  width: 30%;
+}
+
+/* Media Query cho Mobile */
+@media (max-width: 768px) {
+
+  /* Điều chỉnh Banner */
+  .banner {
+    flex-direction: column; /* Chuyển banner thành dạng cột */
+    height: auto; /* Tự động điều chỉnh chiều cao cho phù hợp */
+    padding: 10px; /* Giảm padding cho mobile */
+  }
+
+  /* Phần chữ */
+  .banner__content {
+    width: 100%; /* Đặt chiều rộng thành 100% */
+    text-align: center; /* Căn giữa nội dung */
+    margin-left: 0; /* Loại bỏ margin-left */
+    margin-right: 0; /* Loại bỏ margin-right */
+    padding: 10px 0; /* Thêm padding dọc */
+  }
+
+  .banner__content h2 {
+    font-size: 2.5rem; /* Giảm kích thước chữ */
+    margin-right: 0; /* Loại bỏ margin-right */
+  }
+
+  .banner__content p {
+    font-size: 1.5rem; /* Giảm kích thước chữ */
+    text-align: center; /* Căn giữa đoạn văn */
+  }
+
+  /* Phần hình ảnh */
+  .banner__image {
+    width: 100%; /* Đặt chiều rộng thành 100% */
+    margin-top: 20px; /* Thêm khoảng cách phía trên ảnh */
+  }
+
+  .banner__image img {
+    height: 40vh; /* Giảm chiều cao ảnh */
+    border-radius: 15px; /* Giảm độ bo góc */
+  }
+}

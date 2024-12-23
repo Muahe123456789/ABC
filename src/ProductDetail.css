@@ -1,0 +1,106 @@
+.product-detail {
+  display: flex;
+  justify-content: space-between; /* Đảm bảo các phần tử phân bố đều */
+  align-items: flex-start; /* Căn chỉnh các phần tử theo chiều dọc */
+  gap: 20px; /* Khoảng cách giữa các phần tử */
+  padding: 30px;
+}
+
+.product-imagebb img {
+  width: 100%;
+  height: 350px;
+  padding: 20px;
+  border: 1px solid #ccc; /* Viền nhạt */
+  border-radius: 15px; /* Bo góc hình */
+  animation: slideRight 1s ease-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Thêm hiệu ứng box-shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng bóng nhẹ */
+}
+
+.product-imagebb img:hover {
+  transform: scale(1.1); /* Phóng to hình */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Tăng bóng khi hover */
+}
+
+@keyframes slideRight {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.product-info {
+  flex-grow: 1;
+  max-width: 400px; 
+  
+}
+
+.product-info h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+ 
+}
+
+.product-info h1 {
+  margin: 5px 0;
+  color: rgb(255, 143, 63);
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.product-info input {
+  width: 60px;
+  margin-left: 10px;
+}
+
+.but {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #F342AC;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.but:hover {
+  background-color: #C71585;
+}
+
+.see-more-btncc{
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #F342AC;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+}
+.see-more-btncc:hover{
+  background-color: #C71585;
+}
+
+.product-description {
+  max-width: 400px; /* Giới hạn chiều rộng mô tả */
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.product-description h3 {
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+.reviews2 span{
+  color: rgb(255, 0, 217);
+  font-size: 28px; 
+  padding: 20px;
+}
+
+
+
+
+

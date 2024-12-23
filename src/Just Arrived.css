@@ -1,0 +1,276 @@
+/* Cấu trúc sản phẩm */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cột, mỗi cột chiếm 1 phần đều */
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+    padding: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+/* Cấu trúc các card sản phẩm */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm hiệu ứng hover */
+}
+
+/* Hiệu ứng hover cho card sản phẩm */
+.product-card:hover {
+    transform: translateY(-5px); /* Di chuyển sản phẩm lên một chút khi hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng đổ bóng mạnh hơn */
+}
+
+/* Sản phẩm ảnh */
+.product-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Nhãn sản phẩm */
+.product-label {
+    background-color: #f8caca;
+    padding: 5px;
+  
+    margin-right: 300px;
+}
+
+.just-arrived-container{
+  padding-bottom: 60px;
+}
+/* Tên sản phẩm */
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Kích thước sản phẩm */
+.product-size {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* Giá cũ */
+.product-old-price {
+    text-decoration: line-through;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+/* Giá mới */
+.product-new-price {
+    font-weight: bold;
+    color: rgb(255, 143, 63);
+    margin-top: 5px;
+}
+
+
+
+
+/* Nút Shop Now */
+.btn {
+    background-color: #F342AC;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.btn:hover {
+    background-color: #C71585;
+}
+
+.containerjust {
+  position: relative; /* Để định vị các phần tử con */
+  width: 100%;
+  height: 250px; /* Đặt chiều cao cho container */
+  overflow: hidden; /* Ẩn phần dư của ảnh */
+}
+
+.container-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Đảm bảo ảnh bao phủ toàn bộ container */
+  filter: brightness(80%); /* Làm tối ảnh để chữ nổi bật hơn */
+}
+
+.container-title {
+  position: absolute; /* Đặt tiêu đề trên ảnh */
+  top: 50%; /* Căn giữa theo chiều dọc */
+  left: 50%; /* Căn giữa theo chiều ngang */
+  transform: translate(-50%, -50%); /* Điều chỉnh để căn chính xác giữa */
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 45px;
+  color: #ffffff; /* Màu chữ trắng */
+  text-shadow: 2px 2px 4px rgba(103, 102, 102, 0.8); /* Tạo bóng mờ cho chữ */
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px; /* Tạo góc bo tròn cho nền chữ */
+}
+
+.container-description {
+  position: absolute; 
+  top: 60%; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  text-align: center;
+  width: 80%;
+}
+
+.product-name{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+@media (max-width: 768px) {
+    .just-arrived-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+@media (max-width: 768px) {
+     .product-card {
+      flex-direction: column;
+      text-align: center;
+      grid-template-columns: repeat(2, 1fr); /* Hiển thị 2 sản phẩm mỗi hàng trên mobile */
+      gap: 15px; /* Giảm khoảng cách giữa các sản phẩm */
+    }
+  }
+@media (max-width: 768px) {
+ .containerjust {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+@media (max-width: 768px) {
+    .products-grid {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  .products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin: 0 auto;
+}
+
+/* Container holding the product cards */
+.contentb6 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centers the cards horizontally */
+  gap: 20px; /* Adds space between the cards */
+  padding: 20px; /* Optional: Add padding around the container */
+}
+
+/* Product Card Styling */
+.product-card {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  padding: 12px;
+  width: 250px; /* Set a fixed width for the cards */
+  height: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr); /* Hiển thị 2 sản phẩm mỗi hàng trên mobile */
+    gap: 15px; /* Giảm khoảng cách giữa các sản phẩm */
+  }
+
+
+  .product-card {
+    text-align: center;
+  }
+}
+/* Cấu trúc tìm kiếm và sắp xếp */
+.product-search {
+  display: flex;
+  justify-content: flex-end; /* Đặt tất cả các phần tử sang bên phải */
+  align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+  gap: 10px; /* Khoảng cách giữa các phần tử */
+  padding: 40px;
+}
+
+/* Ô tìm kiếm */
+.product-search input {
+  width: 150px; /* Điều chỉnh chiều rộng của ô tìm kiếm */
+  padding: 5px; /* Khoảng cách bên trong ô tìm kiếm */
+  font-size: 14px; /* Kích thước chữ */
+}
+
+/* Select dropdown */
+.product-search select {
+  padding: 5px; /* Khoảng cách bên trong ô select */
+  font-size: 14px; /* Kích thước chữ */
+}
+
+/* Responsive cho mobile */
+@media (max-width: 768px) {
+  .product-search {
+    flex-direction: row; /* Đặt các phần tử theo chiều ngang */
+ margin-right: 30%;
+    
+    padding: 20px; /* Giảm padding cho phù hợp với màn hình nhỏ */
+  }
+
+  .product-search input,
+  .product-search select {
+    width: 30%; /* Chiếm 40% chiều rộng của container */
+    margin-bottom: 10px; /* Khoảng cách giữa các phần tử */
+    font-size: 16px; /* Tăng kích thước chữ một chút để dễ đọc */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-search input,
+  .product-search select {
+    width: 20%; /* Chiếm 40% chiều rộng của container */
+    font-size: 12px; /* Giảm kích thước chữ trên điện thoại nhỏ */
+  }
+}
+

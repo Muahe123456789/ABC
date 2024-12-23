@@ -1,0 +1,397 @@
+/* General reset for spacing and layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar container */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 10px;
+}
+
+/* Menu button */
+.nav__menu__btn {
+  display: none;
+  cursor: pointer;
+}
+
+.nav__menu__btn i {
+  font-size: 24px;
+}
+
+/* Menu links */
+
+
+/* Menu con mặc định ẩn đi */
+.dropdown-menu2 {
+  display: none;
+  position: absolute; /* Đặt menu con theo vị trí của menu cha */
+  top: 0; /* Căn menu con từ trên xuống */
+  left: 100%; /* Đẩy menu con sang phải của menu cha */
+  background-color: rgb(245, 245, 245);
+  width: 100%; /* Menu con chiếm 60% chiều rộng */
+  z-index: 1001; /* Đảm bảo menu con hiển thị trên menu cha */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu2 ul{
+  background-color: #ad347c;
+}
+
+/* Hiển thị menu con khi hover hoặc focus vào menu cha */
+.nav__links li:hover > .dropdown-menu2,
+.nav__links li:focus-within > .dropdown-menu2 {
+  display: block;
+}
+
+/* Tùy chỉnh menu cha */
+.nav__links li {
+  position: relative; /* Làm gốc cho menu con */
+  
+}
+
+/* Tùy chỉnh liên kết trong menu */
+.nav__links li a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+}
+
+/* Menu chính khi checkbox được chọn */
+.input_check-menu:checked ~ .nav__links {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 30%; /* Menu cha nhỏ lại */
+  background-color: rgb(255, 233, 233);
+  z-index: 1000;
+  overflow-y: auto; /* Cho phép cuộn khi nội dung dài */
+}
+
+/* Overlay mờ khi menu mở */
+.input_check-menu:checked ~ .overlay_check-menu {
+  display: block;
+}
+
+.overlay_check-menu {
+  display: none;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Responsive menu */
+@media (max-width: 768px) {
+  .nav__menu__btn {
+    display: block; /* Nút mở menu */
+  }
+
+  .nav__links {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav__links--active {
+    display: flex;
+  }
+
+  
+
+  /* Chỉnh menu chính khi mở */
+  .input_check-menu:checked ~ .nav__links {
+    width: 50%; 
+    background-color: rgb(255, 233, 233); 
+  }
+}
+
+
+
+/* Navbar container */
+nav {
+    background-color: rgb(255, 233, 233);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 80px;
+}
+
+
+/* Logo and visitor count */
+.nav__header {
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo {
+    display: flex;
+    align-items: center;
+    height: 10px;
+}
+
+
+.nav__logo img {
+    height: 70px;
+    width: auto;
+}
+
+/* Menu button (hamburger menu for mobile) */
+.nav__menu__btn {
+    display: none; /* Hidden by default, shown on mobile */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.nav__menu__btn i {
+    color: #ef21ab;
+}
+
+/* Navbar links */
+.nav__links {
+    display: flex;
+    list-style: none;
+}
+
+/* Adjust positioning of dropdown */
+.nav__links li {
+    position: relative; /* This is important for positioning dropdowns correctly */
+    margin: 0 15px;
+   
+}
+
+
+.nav__links a {
+  
+    color: #080808;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.nav__links a:hover {
+    color: #C71585;
+}
+
+/* Dropdown menu styling */
+.nav__links li > ul {
+    display: none;
+    position: absolute;
+    top: 100%; /* Ensures the dropdown opens below the parent link */
+    left: 20%;
+    background-color: rgb(251, 225, 225);
+    padding: 10px;
+    border-radius: 4px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Ensures the dropdown is above other content */
+}
+
+.nav__links li:hover > ul {
+    display: block; /* Show dropdown when parent is hovered */
+}
+
+/* Adjust dropdown menu width */
+.dropdown-menu2 {
+    list-style: none;
+    padding: 0;
+    width: 200px; /* You can adjust this width to fit the content */
+}
+
+.dropdown-menu2 li {
+    padding: 8px 12px;
+}
+
+.dropdown-menu2 li a {
+    color: #0e0d0d;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.dropdown-menu2 li a:hover {
+    color: #C71585;
+}
+
+/* Login and buttons */
+.nav__btns {
+    display: flex;
+    align-items: center;
+}
+
+.nav__btns .btna {
+    background-color: #ff4bb7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.nav__btns .btna:hover {
+    background-color: #c9248d;
+}
+
+/* Media queries for mobile responsiveness */
+@media (max-width: 768px) {
+    .nav__menu__btn {
+        display: block; 
+    }
+
+    .nav__links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: #333;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        z-index: 1;
+    }
+
+    .nav__links li {
+        
+        text-align: center;
+        margin: 0;
+       
+    }
+
+    .nav__links.active {
+        display: flex; /* Show menu when active */
+    }
+
+    .nav__links li > ul {
+        position: static; /* Reset dropdown position for mobile */
+        display: none;
+    }
+
+    .nav__links li:hover > ul {
+        display: block;
+    }
+}
+.nav__visit-count {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px; 
+  }
+  
+  .nav__search input {
+    width: 200px;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .nav__search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .view-count {
+    margin-top: 50px;
+    margin-left: 10px;
+    color: #000000;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.nav__btns {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Khoảng cách giữa các nút */
+  }
+  
+  .nav__cart {
+    position: relative;
+    background-color:rgb(229, 229, 229);
+    
+  }
+  
+  .nav__cart i {
+    font-size: 24px;
+    color: #ad347c;
+  }
+  
+  .cart-count {
+    position: absolute;
+    top: -15px;
+    right: -5px;
+    background-color: rgba(15, 14, 14, 0);
+    color: rgb(245, 8, 182);
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 20px;
+  }
+  
+  .nav__btns .btn {
+    padding: 10px 20px;
+    background-color: #FF1493;
+   
+    border: none;
+    cursor: pointer;
+  }
+  
+  .nav__btns .btn:hover {
+    background-color: #FF1493;
+  }
+  
+  .user-greeting {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+/* Đảm bảo mũi tên không bị xếp chồng lên nhau */
+.nav__links li {
+  position: relative;
+}
+
+/* Mũi tên trong các menu */
+.nav__links li a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Đảm bảo khoảng cách giữa tên mục và mũi tên */
+ 
+}
+
+/* Mũi tên */
+.nav__links li a i {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+  
+}
+
+/* Khi hover vào menu cha, mũi tên sẽ quay */
+.nav__links li:hover > a i {
+  transform: rotate(90deg); /* Mũi tên quay khi hover */
+}
+
+/* Đảm bảo mũi tên không xuất hiện trên các menu không có con */
+.nav__links li:not(:has(ul)) a i {
+  display: none;
+}
+
+/* Đảm bảo các mục con có khoảng cách đều */
+.nav__links li > ul {
+  padding-left: 10px; /* Khoảng cách giữa menu cha và menu con */
+  
+}
+
+
+
+

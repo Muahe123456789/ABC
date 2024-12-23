@@ -1,0 +1,337 @@
+/* Default styles (desktop view) */
+.app-container {
+  font-family: 'Times New Roman', Times, serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Mission Section */
+.mission-section {
+  text-align: center;
+  margin: 0 auto;
+}
+
+.mission-header {
+  position: relative;
+}
+
+.mission-image {
+  width: 100%;
+  height: auto;
+  filter: brightness(90%);
+}
+
+.mission-title {
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 300px;
+  font-weight: 300;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 3.5rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  letter-spacing: 2px;
+}
+
+.mission-content {
+  padding: 20px;
+}
+
+.mission-content h3 {
+  font-size: 45px;
+  font-weight: 300;
+}
+
+.mission-content p {
+  font-size: 35px;
+  font-weight: 300;
+}
+
+.social-actions h3, .social-actions p {
+  font-weight: 300;
+}
+
+.mission-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.learn-more {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.learn-more:hover {
+  color: #0056b3;
+}
+
+/* People Section */
+.people-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #feb4b6;
+  margin-bottom: 50px;
+}
+
+.people-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.people-content h2 {
+  font-size: 66px;
+}
+
+.people-content h2 span {
+  color: #d000ff;
+  font-size: 56px;
+}
+
+.people-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 50px 20px;
+}
+
+.people-content {
+  max-width: 50%;
+}
+
+.people-content h2 {
+  font-size: 2rem;
+}
+
+.people-content h3 {
+  font-size: 1.5rem;
+}
+
+.people-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.people-image {
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+  height: 500px;
+}
+
+.people-image img {
+  width: 100%;
+  height: 150%;
+  object-fit: cover;
+  position: absolute;
+  top: 50%;
+  right: -100%;
+  transform: translateY(-50%);
+  transition: right 1s ease-in-out;
+}
+
+.people-image.visible img {
+  right: 0;
+}
+
+/* Planet Section */
+.planet-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  background-color: #d8e6e6;
+}
+
+.planet-image img {
+  max-width: 400px;
+  border-radius: 8px;
+}
+
+.planet-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.planet-content h2 span {
+  color: #28a745;
+}
+
+.planet-stats {
+  margin-top: 10px;
+}
+
+/* Slider */
+.slider-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.slider-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 200px;
+}
+
+.slide {
+  display: none;
+  transition: opacity 0.5s ease-in-out;
+  position: absolute;
+  width: 100%;
+}
+
+.slide.active {
+  display: block;
+  opacity: 1;
+}
+
+.slider-btn {
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.slider-btn.prev {
+  left: 10px;
+}
+
+.slider-btn.next {
+  right: 10px;
+}
+
+.slider-title {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.slider-images-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.slider-image {
+  width: 500px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+
+  .app-container {
+    padding: 10px; /* Add padding for smaller screens */
+  }
+
+  /* Mission Section */
+  .mission-header {
+    margin-bottom: 30px;
+  }
+
+  .mission-title {
+    font-size: 2rem;
+    margin-left: 0;
+    position: static;
+    transform: translate(0, 0);
+    font-weight: bold;
+  }
+
+  .mission-content h3 {
+    font-size: 24px;
+  }
+
+  .mission-content p {
+    font-size: 18px;
+  }
+
+  /* People Section */
+  .people-section {
+    flex-direction: column; /* Stack vertically on mobile */
+    align-items: center;
+    padding: 20px;
+  }
+
+  .people-content, .people-image {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .people-image {
+    height: 300px; /* Reduce height for mobile */
+  }
+
+  /* Planet Section */
+  .planet-section {
+    flex-direction: column; /* Stack vertically on mobile */
+    align-items: center;
+    padding: 20px;
+  }
+
+  .planet-image {
+    width: 100%;
+    height: 300px;
+  }
+
+  .planet-content {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .planet-content h2 {
+    font-size: 1.5rem;
+  }
+
+  /* Slider Section */
+  .slider-section {
+    padding: 20px;
+  }
+
+  .slider-container {
+    height: 150px; /* Adjust the height of the slider */
+  }
+
+  .slider-btn {
+    font-size: 18px;
+    padding: 8px;
+  }
+
+  .slider-title {
+    font-size: 1.5rem;
+  }
+
+  .slider-images-container {
+    flex-direction: column; /* Stack images vertically */
+    gap: 10px;
+  }
+
+  .slider-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+}
+

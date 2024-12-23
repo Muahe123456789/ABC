@@ -1,0 +1,23 @@
+.containerskincare {
+    padding: 20px;
+    height: 250px;
+    background-size: 100%;
+    background-repeat: no-repeat; 
+    background-position: right; 
+}
+.containerskincare h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size:65px;
+    text-align: center; 
+    margin: 0 auto;  
+    width: fit-content; 
+    color: #000000;
+}
+.containerskincare p {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+    text-align: center; 
+    margin: 0 auto;  
+    width: fit-content; 
+    color: #010101;
+}

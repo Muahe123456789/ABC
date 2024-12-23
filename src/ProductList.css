@@ -1,0 +1,201 @@
+/* Container holding the product cards */
+.containerb6 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Title section */
+.Contenskin {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.Contenskin h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.Contenskin span {
+  font-size: 18px;
+  color: #666;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Product grid structure */
+.contentb6 {
+  display: flex; /* Use flexbox for horizontal layout */
+  justify-content: space-between; /* Distribute items evenly */
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+  gap: 20px; /* Space between product cards */
+  padding: 0 20px;
+}
+
+/* Product card styling */
+.imgba6 {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 22%; /* Set width for horizontal layout */
+}
+
+.imgba6:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.imgba6 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.1);
+}
+
+.imgba6 span {
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.imgba6 p {
+  font-size: 16px;
+  color: #888;
+  margin-top: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.card__preci {
+  display: block;
+  font-size: 16px;
+  color: #999;
+}
+
+.card__preci--before {
+  text-decoration: line-through;
+}
+
+.card__preci--now {
+  font-weight: bold;
+  color: #eb0c09;
+  margin-top: 5px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.btn {
+  background-color: #F342AC;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #F342AC;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.pagination-btn {
+  background-color: #F342AC;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 0 10px;
+}
+
+.pagination-btn:hover {
+  background-color: #C71585;
+}
+
+.page-numbers {
+  display: flex;
+  align-items: center;
+}
+
+.page-numbers button {
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  margin: 0 5px;
+  background-color: white;
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.page-numbers button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  /* Product grid structure */
+  .contentb6 {
+    display: flex; /* Use flexbox */
+    flex-direction: column; /* Stack items vertically */
+    gap: 15px; /* Reduce the space between items */
+    padding: 0 10px; /* Reduce padding */
+  }
+
+  /* Product card styling */
+  .imgba6 {
+    width: 100%; /* Make each product card take full width */
+    padding: 15px; /* Reduce padding */
+  }
+
+  /* Product name and price */
+  .imgba6 span {
+    font-size: 16px; /* Smaller font size for product name */
+  }
+
+  .imgba6 p {
+    font-size: 14px; /* Smaller font size for product description */
+  }
+
+  .card__preci--now {
+    font-size: 14px; /* Smaller font size for product price */
+  }
+
+  /* Button styling */
+  .btn {
+    width: 100%; /* Button takes full width on mobile */
+    font-size: 14px; /* Smaller font size */
+    padding: 12px 0; /* Reduced padding */
+  }
+
+  /* Pagination */
+  .pagination {
+    flex-direction: column; /* Stack pagination buttons vertically */
+    align-items: center; /* Center pagination buttons */
+  }
+
+  .pagination-btn {
+    width: 100%; /* Pagination buttons take full width */
+    margin: 5px 0; /* Space between pagination buttons */
+  }
+
+  .page-numbers button {
+    padding: 5px 10px; /* Smaller padding */
+    font-size: 14px; /* Smaller font size */
+  }
+}

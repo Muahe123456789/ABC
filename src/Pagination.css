@@ -1,0 +1,22 @@
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .pagination-btn {
+    padding: 10px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+  .page-numbers {
+    margin: 0 10px;
+  }
+  
+  .pagination-btn:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  

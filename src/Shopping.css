@@ -1,0 +1,21 @@
+.pink-button {
+    background-color: rgb(255, 20, 147);
+    transition: background-color 0.3s ease;
+  }
+  
+  .pink-button:hover {
+    background-color: rgb(255, 105, 180); /* A lighter pink color */
+  }
+
+  .pink-button {
+    background-color: rgb(255, 20, 147);
+    transition: background-color 0.3s ease;
+    color: white; /* Text color for better contrast */
+    border: none; /* Optional: removes the default button border */
+    padding: 8px 16px; /* Optional: adds some padding for a better button size */
+    cursor: pointer; /* Optional: changes the cursor to a pointer */
+  }
+  
+  .pink-button:hover {
+    background-color: rgb(255, 105, 180); /* Lighter pink color on hover */
+  }

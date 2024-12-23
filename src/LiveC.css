@@ -1,0 +1,276 @@
+/* Header styles */
+.header h1 {
+  font-size: 2.5rem;
+  margin: 10;
+}
+
+.header p {
+  font-size: 1rem;
+  margin: 10px 10 3px;
+}
+
+.integrated-container {
+  padding-top: 80px;
+}
+
+.cards-section {
+  padding-top: 80px;
+}
+
+/* Card styles */
+.cardsB {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cardB {
+  background-color: #ab0e25;
+  color: #fff;
+  overflow: hidden;
+  text-align: center;
+  width: 300px;
+  padding: 10px;
+}
+
+.cardB-img {
+  width: 100%;
+  height: 200px;
+}
+
+.cardB h3 {
+  margin: 15px 10;
+  font-size: 1.1rem;
+}
+
+/* Footer styles */
+.footer2 {
+  color: #333;
+  background-color: #fff;
+  margin-top: 30px;
+  padding: 30px;
+  border-top: 1px solid #ddd;
+}
+
+.footer2 a {
+  color: #910f22;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* General Layout */
+.container {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.title {
+  font-size: 36px;
+  color: #d92525;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin-top: 10px;
+  color: #555;
+  font-size: 18px;
+}
+
+.buttonGroup {
+  margin-top: 20px;
+}
+
+/* Main Section */
+.mainSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  gap: 30px;
+}
+
+.imageContainer {
+  flex: 1 1 40%;
+  text-align: center;
+}
+
+.image {
+  max-width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+  flex: 1 1 50%;
+}
+
+.sectionTitle {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.text {
+  color: #555;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/* Consultation */
+.consultation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fdfdfd;
+  border: 1px solid #e0e0e0;
+  padding: 40px 20px;
+  max-width: 1000px;
+  margin: 30px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.consultation-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+}
+
+.consultation-image img {
+  max-width: 300px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.consultation-image img:hover {
+  transform: scale(1.05);
+}
+
+.consultation-description p {
+  font-size: 22px;
+  color: #444;
+  line-height: 1.6;
+  margin: 0 20px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.consultation-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 25px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Live Consultation */
+.live-consultation-section .main-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+}
+
+.live-consultation-section .image-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.live-consultation-section .content {
+  flex: 2;
+}
+
+.image-container img {
+  width: 100%;
+  height: 450px;
+}
+
+.live-consultation-section .button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.primary-button,
+.secondary-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button {
+  background-color: #F342AC;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.primary-button:hover {
+  background-color: #C71585;
+}
+
+.secondary-button {
+  background-color: #F342AC;
+  color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.secondary-button:hover {
+  background-color: #C71585;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .mainSection {
+    flex-direction: column;
+  }
+
+  .imageContainer, .content {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .image-container img {
+    width: 80%;
+    height: auto;
+  }
+
+  .sectionTitle {
+    font-size: 30px;
+  }
+
+  .consultation-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .consultation-content {
+    gap: 10px;
+  }
+
+  .consultation-description p {
+    font-size: 18px;
+  }
+
+  .primary-button,
+  .secondary-button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+}

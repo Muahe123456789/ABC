@@ -1,0 +1,108 @@
+/* Cấu trúc sản phẩm */
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 cột */
+    gap: 20px; /* Khoảng cách giữa các sản phẩm */
+    padding: 0 20px;
+}
+
+/* Cấu trúc các card sản phẩm */
+.product-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm hiệu ứng hover */
+}
+
+/* Hiệu ứng hover cho card sản phẩm */
+.product-card:hover {
+    transform: translateY(-5px); /* Di chuyển sản phẩm lên một chút khi hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Thêm hiệu ứng đổ bóng mạnh hơn */
+}
+
+/* Sản phẩm ảnh */
+.product-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Nhãn sản phẩm */
+.product-label {
+    background-color: #f8caca;
+    padding: 5px;
+    font-weight: bold;
+}
+
+/* Tên sản phẩm */
+.product-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Kích thước sản phẩm */
+.product-size {
+    font-size: 14px;
+    color: #888;
+    margin-top: 5px;
+}
+
+/* Giá cũ */
+.product-old-price {
+    text-decoration: none;  
+    font-size: 20px;  
+    color: #010101;  
+}
+
+/* Giá mới */
+.product-new-price {
+   margin-left: 20px;
+    font-weight: bold;
+    color: #eb0c09;
+    margin-top: 5px;
+    font-family:'Times New Roman', Times, serif;
+}
+
+/* Nút Shop Now */
+.btn {
+    background-color: #F342AC;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.btn:hover {
+    background-color: #C71585;
+}
+
+.best-sellers-container{
+    margin-bottom: 50px;
+}
+
+/* ------ */
+.product-name {
+    font-size: 0.9rem;  /* Adjust this value as needed */
+  }
+  
+  .product-size {
+    font-size: 0.8rem;  /* Adjust this value as needed */
+  }
+  
+  .product-old-price {
+    font-size: 20px;  /* Adjust this value as needed to make the text smaller */
+    color: #010101;  /* Optional: You can also change the color to make it look like a crossed-out price */
+  }
+  
+  .product-new-price {
+    font-size: 0.9rem;  /* Adjust this value as needed */
+  }
+  

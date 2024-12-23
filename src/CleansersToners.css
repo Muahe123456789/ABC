@@ -1,0 +1,63 @@
+.faq-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa toàn bộ FAQ container */
+    text-align: center; /* Căn giữa text trong các phần tử */
+  }
+  .just-arrived-container {
+    width: 100%; 
+    margin: 0 auto;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+  }
+  
+.faq-container p {
+    font-size: 45px;
+}
+
+  .question-container {
+    margin-bottom: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Căn giữa cả câu hỏi và câu trả lời */
+    width: 100%;
+  }
+  
+  .question-container h4 {
+    font-size: 18px;
+    color: #111112;
+    margin: 0;
+    display: flex;
+    justify-content: center; /* Căn giữa câu hỏi */
+    align-items: center;
+  }
+  .answer p {
+    margin-top: 5px; /* Giảm khoảng cách phía trên */
+    padding: 10px 20px; /* Điều chỉnh padding để câu trả lời nhỏ hơn */
+    font-size: 25px; /* Giảm kích thước chữ xuống 12px, bạn có thể điều chỉnh tùy ý */
+    color: #333;
+    text-align: center;
+    width: 50%; /* Giới hạn chiều rộng của câu trả lời */
+    margin: 0 auto; /* Căn giữa câu trả lời */
+    border-radius: 5px; /* Bo góc cho câu trả lời */
+    background-color: #f9f9f9; /* Thêm màu nền nhẹ cho câu trả lời */
+  }
+  
+  .question-container:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .toggle-icon {
+    font-size: 20px;
+    font-weight: bold;
+    color: #0e0f0f;
+    transition: transform 0.3s ease;
+  }
+  
+ 
+  

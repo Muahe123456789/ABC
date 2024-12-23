@@ -1,0 +1,12 @@
+.body-care-guide{
+    width: 70%;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.body-care-guide h4,
+.body-care-guide p {
+  font-size: 20px;
+  text-align: left;
+  font-family: 'Times New Roman', Times, serif;
+}
