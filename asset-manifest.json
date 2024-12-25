@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Clarins/static/css/main.2f5da3ff.css",
-    "main.js": "/Clarins/static/js/main.18646c4b.js",
+    "main.css": "/Clarins/static/css/main.ac4f5030.css",
+    "main.js": "/Clarins/static/js/main.a7466075.js",
     "static/js/453.b0629ae6.chunk.js": "/Clarins/static/js/453.b0629ae6.chunk.js",
     "static/media/remixicon.svg?t=1730118419915": "/Clarins/static/media/remixicon.0551ce0fd52a1a7b1230.svg",
     "static/media/remixicon.eot?t=1730118419915": "/Clarins/static/media/remixicon.918a6e24637af868f0ae.eot",
@@ -9,12 +9,12 @@
     "static/media/remixicon.woff?t=1730118419915": "/Clarins/static/media/remixicon.442ee771ea7ae5b713e4.woff",
     "static/media/remixicon.woff2?t=1730118419915": "/Clarins/static/media/remixicon.11bc908555df35c11b24.woff2",
     "index.html": "/Clarins/index.html",
-    "main.2f5da3ff.css.map": "/Clarins/static/css/main.2f5da3ff.css.map",
-    "main.18646c4b.js.map": "/Clarins/static/js/main.18646c4b.js.map",
+    "main.ac4f5030.css.map": "/Clarins/static/css/main.ac4f5030.css.map",
+    "main.a7466075.js.map": "/Clarins/static/js/main.a7466075.js.map",
     "453.b0629ae6.chunk.js.map": "/Clarins/static/js/453.b0629ae6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f5da3ff.css",
-    "static/js/main.18646c4b.js"
+    "static/css/main.ac4f5030.css",
+    "static/js/main.a7466075.js"
   ]
 }
