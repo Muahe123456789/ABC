@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Clarins/static/css/main.77e5cd8a.css",
-    "main.js": "/Clarins/static/js/main.f9681bfc.js",
+    "main.js": "/Clarins/static/js/main.625d04b9.js",
     "static/js/453.b0629ae6.chunk.js": "/Clarins/static/js/453.b0629ae6.chunk.js",
     "static/media/remixicon.svg?t=1730118419915": "/Clarins/static/media/remixicon.0551ce0fd52a1a7b1230.svg",
     "static/media/remixicon.eot?t=1730118419915": "/Clarins/static/media/remixicon.918a6e24637af868f0ae.eot",
@@ -10,11 +10,11 @@
     "static/media/remixicon.woff2?t=1730118419915": "/Clarins/static/media/remixicon.11bc908555df35c11b24.woff2",
     "index.html": "/Clarins/index.html",
     "main.77e5cd8a.css.map": "/Clarins/static/css/main.77e5cd8a.css.map",
-    "main.f9681bfc.js.map": "/Clarins/static/js/main.f9681bfc.js.map",
+    "main.625d04b9.js.map": "/Clarins/static/js/main.625d04b9.js.map",
     "453.b0629ae6.chunk.js.map": "/Clarins/static/js/453.b0629ae6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.77e5cd8a.css",
-    "static/js/main.f9681bfc.js"
+    "static/js/main.625d04b9.js"
   ]
 }
